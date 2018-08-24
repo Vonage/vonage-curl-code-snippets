@@ -15,6 +15,9 @@ SECRET_ID=""
 
 # Audit API
 EVENT_UUID=""  # UUID of audit event
+SEARCH_TEXT="number"
+DATE_FROM="2018-07-01"
+DATE_TO="2018-08-01"
 
 # If we have a local config, override using that
 CONFIG_DIR=$(dirname "${BASH_SOURCE[0]}")
