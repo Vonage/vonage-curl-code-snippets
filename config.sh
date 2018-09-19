@@ -9,6 +9,16 @@ TO_NUMBER=""
 FROM_NUMBER=""
 NEXMO_NUMBER=""
 
+# For FaceBook messaging
+SENDER_ID=""
+RECIPIENT_ID=""
+
+# For Viber messaging
+VIBER_SERVICE_MESSAGE_ID=""
+
+# For WhatsApp messaging
+WHATSAPP_NUMBER=""
+
 ACCOUNT_ID="" # For APIs that allow you to access the resources of a sub account
 
 # Account API
