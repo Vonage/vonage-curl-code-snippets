@@ -6,6 +6,7 @@ NEXMO_APPLICATION_ID=""
 NEXMO_PRIVATE_KEY=""
 
 TO_NUMBER=""
+FROM_NUMBER=""
 NEXMO_NUMBER=""
 
 ACCOUNT_ID="" # For APIs that allow you to access the resources of a sub account
