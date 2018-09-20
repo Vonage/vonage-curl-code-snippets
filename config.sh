@@ -10,8 +10,8 @@ FROM_NUMBER=""
 NEXMO_NUMBER=""
 
 # For FaceBook messaging
-SENDER_ID=""
-RECIPIENT_ID=""
+FB_SENDER_ID=""
+FB_RECIPIENT_ID=""
 
 # For Viber messaging
 VIBER_SERVICE_MESSAGE_ID=""
