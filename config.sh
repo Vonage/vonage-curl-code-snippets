@@ -31,7 +31,7 @@ DATE_FROM="2018-07-01"
 DATE_TO="2018-08-01"
 
 # Number Insight API
-NEXMO_TO_LOOKUP="447700900000"
+SEARCH_NUMBER="447700900000"
 
 # If we have a local config, override using that
 CONFIG_DIR=$(dirname "${BASH_SOURCE[0]}")
