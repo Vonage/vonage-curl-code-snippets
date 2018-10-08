@@ -31,7 +31,7 @@ DATE_FROM="2018-07-01"
 DATE_TO="2018-08-01"
 
 # Number Insight API
-SEARCH_NUMBER="447700900000"
+INSIGHT_NUMBER="447700900000"
 WEBHOOK_URL=""
 
 # If we have a local config, override using that
