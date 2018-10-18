@@ -41,13 +41,14 @@ Create a new Conversation before moving on to testing User. Make sure you update
 
 ### User
 
-Create a User
-List Users
-Create a User
-Get a User
-Update a User
-Delete a User
-Get a User Conversations
+1. Create a User - set the variable `USER_ID` in your `config.local.sh` file.
+2. List Users 
+3. Get a User
+4. Update a User - then use get-user.sh to make sure the user was updated.
+5. Get a User Conversations - the user has not been joined to any conversations so this will be an empty array.
+6. Delete a User - list users to confirm empty array is returned.
+
+Create a new User before proceeding. Make sure you update `config.local.sh`.
 
 ### Member
 
