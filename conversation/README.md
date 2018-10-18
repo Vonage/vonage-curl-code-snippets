@@ -72,6 +72,16 @@ to test events you will need to join the member into a conversation. To do this 
 
 ### Leg
 
-List Legs
-Delete a Leg
+Depending on what other testing you have done on the APP_ID you might
+not have any Legs. The quickest way to create a Leg for testing
+purposes is as follows:
 
+1. Link a Nexmo Number to the Nexmo Application you are using to test these scripts.
+2. Call that Nexmo number from your mobile phone. Let the call end. 
+
+Now that at least one leg has been created:
+
+1. List Legs - make a note of a leg UUID (part of the legs JSON object) and set in your local config.
+2. Delete a Leg - Delete a leg and confirm deletion by listing legs.
+
+---
