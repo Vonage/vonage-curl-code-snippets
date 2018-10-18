@@ -52,11 +52,15 @@ Create a new User before proceeding. Make sure you update `config.local.sh`.
 
 ### Member
 
-Create a Member
-List Members
-Get a Member
-Update a Member
-Delete a Member
+1. Create a Member - this will invite a user into a conversation. Add the `MEMBER_ID` to your `config.local.sh`.
+2. List Members
+3. Get a Member
+4. Update a Member - this will change the member from `invited` to `joined`. Use get member to confirm.
+5. Delete a Member - Use list members to confirm deletion - the User will have a state `LEFT` as the mebership has been dissolved.
+
+Create a new Member before proceeding. Make sure you update `config.local.sh`.
+
+At this point you will have two members (with same `USER_ID`), one with status `LEFT` and one with `invited`.
 
 ### Event
 
