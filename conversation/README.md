@@ -2,15 +2,42 @@
 
 ## Testing Conversation API Curl scripts
 
-TBD
+These are some notes on testing the Conversation API using these Curl scripts.
+
+Eventually I would like to write an automated script to do this but for now it's manual.
+
+### config.local.sh
+
+You will need to create a `config.local.sh` file. This will contain:
+
+```
+NEXMO_APPLICATION_ID="Your APP_ID"
+NEXMO_PRIVATE_KEY="/path/to/private.key"
+```
+
+These are used to generate a valid JWT for authenticating your API calls.
+
+You can also add the following to the file:
+
+```
+CONVERSATION_ID=""
+USER_ID=""
+MEMBER_ID=""
+EVENT_ID=""
+LEG_ID=""
+```
+
+These are used to test various objects in the Conversation API.
 
 ### Conversation
 
-Create a Conversation
-List Conversations
-Get a Conversation
-Update a Conversation
-Delete a Conversation
+1. Create a Conversation - set the variable `CONVERSATION_ID` in your `config.local.sh` file.
+2. List Conversations - confirm `CONVERSATION_ID` returned is as expected.
+3. Get a Conversation
+4. Update a Conversation - you can change the name of the Conversation for example. Use `get-conversation.sh` to check the change.
+5. Delete a Conversation - then list Conversations again to make sure it has been removed
+
+Create a new Conversation before moving on to testing User. Make sure you update `config.local.sh`.
 
 ### User
 
