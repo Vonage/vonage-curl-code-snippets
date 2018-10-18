@@ -60,14 +60,15 @@ Create a new User before proceeding. Make sure you update `config.local.sh`.
 
 Create a new Member before proceeding. Make sure you update `config.local.sh`.
 
-At this point you will have two members (with same `USER_ID`), one with status `LEFT` and one with `invited`.
+At this point you will have two members (with same `USER_ID`), one with status `LEFT` and one with `invited`. In order
+to test events you will need to join the member into a conversation. To do this just run update member again.
 
 ### Event
 
-Create an Event
-List Events
-Get an Event
-Delete an Event
+1. Create an Event - make a note of the `EVENT_ID` (the number on the end) and this variable to your config file.
+2. List Events - list all events in the conversation.
+3. Get an Event - get the event you created earlier.
+4. Delete an Event - delete the event and use list events or get event to confirm deletion - the event will have `deleted` in its timestamp.
 
 ### Leg
 
