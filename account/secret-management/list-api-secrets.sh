@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 source "../../config.sh"
 
 curl "https://api.nexmo.com/accounts/$ACCOUNT_ID/secrets" \
