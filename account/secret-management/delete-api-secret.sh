@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 source "../../config.sh"
 
 curl -X DELETE "https://api.nexmo.com/accounts/$ACCOUNT_ID/secrets/$SECRET_ID" \

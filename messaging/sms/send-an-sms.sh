@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 source "../../config.sh"
 
 curl -X "POST" "https://rest.nexmo.com/sms/json" \
