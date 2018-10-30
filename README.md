@@ -1,4 +1,4 @@
-# Nexmo CURL Examples
+# Nexmo cURL Examples
 
 This repository is a collection of things you can do with [Nexmo's](https://nexmo.com) APIs, all shown with cURL.
 
@@ -6,13 +6,13 @@ This repository is a collection of things you can do with [Nexmo's](https://nexm
 
 You will need [cURL](https://curl.haxx.se/) installed.
 
-Copy `config.sh` to `config.local.sh` and edit it with your own configuration values.
+You can either directly edit the `config.sh` file and add in your configuration values, or you can create a `config.local.sh` file, which will override the main config file.
 
 If you don't already have a Nexmo account, you'll need one! You can find the API key and secret for your configuration settings on the [Dashboard](https://dashboard.nexmo.com).
 
 ## Run the code snippets
 
-Each example includes the `config.sh` and then the `config.local.sh` files. Run them from the directory they reside in, for example:
+As each example requires the aforementioned config files, you must run them from the directory they reside in, for example:
 
 ```
 cd messaging/sms/

@@ -10,17 +10,17 @@ curl -X POST https://api.nexmo.com/v0.1/messages \
   -d '{ 
    "from":{
         "type": "mms",    
-        "number": '$US_SHORT_CODE'
+        "number": "$US_SHORT_CODE"
    },
    "to":{
         "type": "mms",
-        "number": '$TO_NUMBER'
+        "number": "$TO_NUMBER"
    },
    "message":{ 
       "content":{
           "type": "image",
           "image": {
-              "url": '$IMG_URL'
+              "url": "$IMG_URL"
           }
       }
    }
