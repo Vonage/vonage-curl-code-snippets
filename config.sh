@@ -40,6 +40,11 @@ WEBHOOK_URL=${WEBHOOK_URL:-""}
 US_SHORT_CODE=${US_SHORT_CODE:-""}
 IMG_URL=${IMG_URL:-""}
 
+# Reporting
+REPORT_PRODUCT=${REPORT_PRODUCT:-""}
+REPORT_ID=${REPORT_ID:-""}
+REPORT=${REPORT_URL:-""}
+
 # If we have a local config, override using that
 CONFIG_DIR=$(dirname "${BASH_SOURCE[0]}")
 if [ -f "$CONFIG_DIR/config.local.sh" ]; then
