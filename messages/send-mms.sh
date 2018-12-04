@@ -9,7 +9,7 @@ curl -X POST https://api.nexmo.com/v0.1/messages \
   -d '{ 
    "from":{
         "type": "mms",    
-        "number": "$US_FROM"
+        "number": "$FROM_NUMBER"
    },
    "to":{
         "type": "mms",
