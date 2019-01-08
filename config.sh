@@ -10,7 +10,7 @@ RECIPIENT_NUMBER=${RECIPIENT_NUMBER:-""}
 FROM_NUMBER=${FROM_NUMBER:-""}
 NEXMO_NUMBER=${NEXMO_NUMBER:-""}
 
-RECORDING_URL=${RECORDING_URL:""} # For downloading a recording
+RECORDING_URL=${RECORDING_URL:-""} # For downloading a recording
 
 # For Facebook messaging
 FB_SENDER_ID=${FB_SENDER_ID:-""}
