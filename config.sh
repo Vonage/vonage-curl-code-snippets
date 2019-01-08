@@ -26,6 +26,7 @@ ACCOUNT_ID=${ACCOUNT_ID:-""} # For APIs that allow you to access the resources o
 
 # Account API
 SECRET_ID=${SECRET_ID:-""}
+SMS_CALLBACK_URL=${SMS_CALLBACK_URL:-""}
 
 # Audit API
 EVENT_UUID=${EVENT_UUID:-""}  # UUID of audit event
