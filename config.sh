@@ -50,6 +50,16 @@ REPORT=${REPORT_URL:-""}
 REQUEST_ID=${REQUEST_ID:-""}
 CODE=${CODE:=""}
 
+# Vonage Business Cloud
+VBC_CLIENT_ID=${VBC_CLIENT_ID:-""}
+VBC_CLIENT_SECRET=${VBC_CLIENT_SECRET:-""}
+VBC_ACCOUNT_ID=${VBC_ACCOUNT_ID:-""}
+VBC_LOCATION_ID=${VBC_LOCATION_ID:-""}
+VBC_EXTENSION=${VBC_EXTENSION:-""}
+VBC_USER_ID=${VBC_USER_ID:-""}
+VBC_USERNAME=${VBC_USERNAME:-""}
+VBC_PASSWORD=${VBC_PASSWORD:-""}
+
 # If we have a local config, override using that
 CONFIG_DIR=$(dirname "${BASH_SOURCE[0]}")
 if [ -f "$CONFIG_DIR/config.local.sh" ]; then
