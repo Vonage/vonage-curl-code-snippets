@@ -3,4 +3,4 @@ source "../../config.sh"
 source "../../vbc_token.sh"
 
 curl -H "Authorization: Bearer $VBC_TOKEN" \
-  https://api.entva0.qa.vonagenetworks.net/t/carbon.qa7/provisioning/developer/1.10.1/api/accounts/$VBC_ACCOUNT_ID/locations/$VBC_LOCATION_ID
+  https://api.vonage.com/t/vbc.prod/provisioning/api/accounts/$VBC_ACCOUNT_ID/locations/$VBC_LOCATION_ID
