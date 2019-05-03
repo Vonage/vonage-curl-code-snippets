@@ -22,6 +22,13 @@ VIBER_SERVICE_MESSAGE_ID=${VIBER_SERVICE_MESSAGE_ID:-""}
 # For WhatsApp messaging
 WHATSAPP_NUMBER=${WHATSAPP_NUMBER:-""}
 
+# For media messaging (WhatsApp, Messenger, Viber)
+IMAGE_URL=${IMAGE_URL:-""}
+IMAGE_CAPTION=${IMAGE_CAPTION:-""}
+FILE_URL=${FILE_URL:-""}
+FILE_CAPTION=${FILE_CAPTION:-""}
+AUDIO_URL=${AUDIO_URL:-""}
+
 ACCOUNT_ID=${ACCOUNT_ID:-""} # For APIs that allow you to access the resources of a sub account
 
 # Account API
