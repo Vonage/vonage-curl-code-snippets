@@ -28,6 +28,7 @@ IMAGE_CAPTION=${IMAGE_CAPTION:-""}
 FILE_URL=${FILE_URL:-""}
 FILE_CAPTION=${FILE_CAPTION:-""}
 AUDIO_URL=${AUDIO_URL:-""}
+VIDEO_URL=${VIDEO_URL:-""}
 
 ACCOUNT_ID=${ACCOUNT_ID:-""} # For APIs that allow you to access the resources of a sub account
 
