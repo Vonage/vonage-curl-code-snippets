@@ -8,8 +8,8 @@ curl -X POST https://api.nexmo.com/v0.1/messages \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -d $'{
-    "from": { "type": "viber_service_msg", "id": '$VIBER_SERVICE_MESSAGE_ID' },
-    "to": { "type": "viber_service_msg", "number": '$TO_NUMBER' },
+    "from": { "type": "viber_service_msg", "id": "'$VIBER_SERVICE_MESSAGE_ID'" },
+    "to": { "type": "viber_service_msg", "number": "'$TO_NUMBER'" },
     "message": {
       "content": {
         "type": "text",

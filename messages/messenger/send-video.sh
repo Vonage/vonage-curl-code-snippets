@@ -9,18 +9,18 @@ curl -X "POST" "https://api.nexmo.com/v0.1/messages" \
      -d $'{
   "to": {
     "type": "messenger",
-    "id": '$FB_RECIPIENT_ID'
+    "id": "'$FB_RECIPIENT_ID'"
   },
   "message": {
     "content": {
       "type": "video",
       "video": {
-        "url": '$VIDEO_URL'
+        "url": "'$VIDEO_URL'"
       }
     }
   },
   "from": {
     "type": "messenger",
-    "id": '$FB_SENDER_ID'
+    "id": "'$FB_SENDER_ID'"
   }
 }'

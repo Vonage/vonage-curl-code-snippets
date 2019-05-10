@@ -8,8 +8,8 @@ curl -X POST https://api.nexmo.com/v0.1/messages \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -d $'{
-    "from": { "type": "messenger", "id": '$FB_SENDER_ID' },
-    "to": { "type": "messenger", "id": '$FB_RECIPIENT_ID' },
+    "from": { "type": "messenger", "id": "'$FB_SENDER_ID'" },
+    "to": { "type": "messenger", "id": "'$FB_RECIPIENT_ID'" },
     "message": {
       "content": {
         "type": "text",
