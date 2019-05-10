@@ -15,8 +15,7 @@ curl -X "POST" "https://api.nexmo.com/v0.1/messages" \
     "content": {
       "type": "file",
       "file": {
-        "url": '$FILE_URL',
-        "caption": '$FILE_CAPTION'
+        "url": '$FILE_URL'
       }
     }
   },
