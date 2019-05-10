@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-source "../config.sh"
-source "../jwt.sh"
+source "../../config.sh"
+source "../../jwt.sh"
 
 curl -X POST https://api.nexmo.com/v0.1/messages \
   -H 'Authorization: Bearer '$JWT \
