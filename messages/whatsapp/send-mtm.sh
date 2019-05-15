@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-source "../config.sh"
-source "../jwt.sh"
+source "../../config.sh"
+source "../../jwt.sh"
 
 curl -X POST \
   https://api.nexmo.com/beta/messages \
@@ -10,11 +10,11 @@ curl -X POST \
   -d '{
    "from":{
       "type":"whatsapp",
-      "number":'$WHATSAPP_NUMBER'
+      "number":"'$WHATSAPP_NUMBER'"
    },
    "to":{
       "type":"whatsapp",
-      "number":'$TO_NUMBER'
+      "number":"'$TO_NUMBER'"
    },
    "message":{
       "content":{
