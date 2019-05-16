@@ -33,6 +33,10 @@ curl -X POST \
                }
             ]
          }
+      },
+      "whatsapp": {
+        "policy": "deterministic",
+      	"locale": "en-GB"
       }
    }
 }'
