@@ -68,6 +68,7 @@ REPORT=${REPORT_URL:-""}
 # Verify
 REQUEST_ID=${REQUEST_ID:-""}
 CODE=${CODE:=""}
+WORKFLOW_ID=${WORKFLOW_ID:-"1"}
 
 # Vonage Business Cloud
 VBC_CLIENT_ID=${VBC_CLIENT_ID:-""}
