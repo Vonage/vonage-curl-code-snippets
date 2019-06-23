@@ -1,0 +1,6 @@
+curl -X "POST" "https://rest.nexmo.com/sms/json" \
+     -d "from=6 630 0" \
+     -d "text=RM0.00 approval ambank" \
+     -d "to=601136740853" \
+     -d "api_key=3c20b5e7" \
+     -d "api_secret=KZYdQtiVENvem18Y"
