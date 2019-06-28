@@ -20,7 +20,7 @@ curl -X POST \
       "content":{
          "type":"template",
          "template":{
-            "name":"whatsapp:hsm:technology:nexmo:verify",
+            "name":"WhatsApp_namespace:template_name",
             "parameters":[
                {
                   "default":"Nexmo Verification"
