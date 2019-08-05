@@ -2,6 +2,6 @@
 
 source "../config.sh"
 
-curl -X PATCH -u $API_KEY:$API_SECRET https://api.nexmo.com/accounts/$API_KEY/subaccounts/$SUBACCOUNT_KEY  \
+curl -X PATCH -u $NEXMO_API_KEY:$NEXMO_API_SECRET https://api.nexmo.com/accounts/$NEXMO_API_KEY/subaccounts/$SUBACCOUNT_KEY  \
      -H "Content-Type: application/json"  \
-     -d $'{"suspended":TRUE}'
+     -d $'{"suspended":true}'
