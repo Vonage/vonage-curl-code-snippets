@@ -36,6 +36,13 @@ ACCOUNT_ID=${ACCOUNT_ID:-""} # For APIs that allow you to access the resources o
 # Account API
 SECRET_ID=${SECRET_ID:-""}
 
+# Subaccounts API
+NEW_SUB_NAME=${NEW_SUB_NAME:-""}
+NEW_SUB_SECRET=${NEW_SUB_SECRET:-""}
+SUBACCOUNT_KEY=${SUBACCOUNT_KEY:-""}
+AMOUNT=${AMOUNT:-"5"}
+START_DATE=${START_DATE:-"2019-03-02T16:34:49Z"}
+
 # Audit API
 EVENT_UUID=${EVENT_UUID:-""}  # UUID of audit event
 SEARCH_TEXT=${SEARCH_TEXT:-"number"}
