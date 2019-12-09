@@ -7,8 +7,7 @@ curl -X POST \
   https://api.nexmo.com/v0.1/messages \
   -H 'Authorization: Bearer' $JWT \
   -H 'Content-Type: application/json' \
-  -d '
-{
+  -d '{
   "from": {
     "type": "whatsapp",
     "number": "'$WHATSAPP_NUMBER'"
