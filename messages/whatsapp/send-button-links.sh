@@ -35,7 +35,7 @@ curl -X POST \
                 {
                   "type": "image",
                   "image": {
-                    "link": "'$HEADER_IMAGE_LINK'"
+                    "link": "'$HEADER_IMAGE_URL'"
                   }
                 }
               ]
