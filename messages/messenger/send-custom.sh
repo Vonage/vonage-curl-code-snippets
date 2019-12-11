@@ -30,10 +30,10 @@ curl -X "POST" "https://api.nexmo.com/v0.1/messages" \
                 "passenger_name": "OTHER/A",
                 "pnr_number": "CG4X7U",
                 "seat": "1A",
-                "logo_image_url": "https://www.example.com/en/logo.png",
-                "header_image_url": "https://www.example.com/en/fb/header.png",
+                "logo_image_url": "'$LOGO_IMAGE_URL'",
+                "header_image_url": "'$HEADER_IMAGE_URL'",
                 "qr_code": "M1OTHER/A  CG4X7U nawouehgawgnapwi3jfa0wfh",
-                "above_bar_code_image_url": "https://www.example.com/en/PLAT.png",
+                "above_bar_code_image_url": "'$ABOVE_BAR_CODE_IMAGE_URL'",
                 "auxiliary_fields": [
                   {
                     "label": "Terminal",
