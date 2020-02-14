@@ -19,6 +19,31 @@ curl -X "POST" "https://api.nexmo.com/v2/applications" \
           "http_method": "POST"
         }
       }
-    }
+    },
+    "voice": {
+      "webhooks": {
+        "answer_url": {
+          "address": "https://example.com/webhooks/answer",
+          "http_method": "GET"
+        },
+        "fallback_answer_url": {
+          "address": "https://fallback.example.com/webhooks/answer",
+          "http_method": "GET"
+        },
+        "event_url": {
+          "address": "https://example.com/webhooks/event",
+          "http_method": "POST"
+        }
+      }
+    },
+    "rtc": {
+      "webhooks": {
+        "event_url": {
+          "address": "https://example.com/webhooks/event",
+          "http_method": "POST"
+        }
+      }
+    },
+    "vbc": {}
   }
 }'
