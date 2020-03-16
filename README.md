@@ -1,5 +1,7 @@
 # Nexmo cURL Examples
 
+<img src="https://developer.nexmo.com/assets/images/Vonage_Nexmo.svg" height="48px" alt="Nexmo is now known as Vonage" />
+
 This repository is a collection of things you can do with [Nexmo's](https://nexmo.com) APIs, all shown with cURL.
 
 ## Pre-requisites
