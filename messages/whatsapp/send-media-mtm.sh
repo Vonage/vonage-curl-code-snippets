@@ -22,8 +22,8 @@ curl -X POST \
       "custom": {
         "type": "template",
         "template": {
-          "namespace": "whatsapp:hsm:technology:nexmo",
-          "name": "parcel_location",
+          "namespace": "'$WHATSAPP_TEMPLATE_NAMESPACE'",
+          "name": "'$WHATSAPP_TEMPLATE_NAME'",
           "language": {
             "policy": "deterministic",
             "code": "en"

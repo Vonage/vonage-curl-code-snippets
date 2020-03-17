@@ -22,8 +22,8 @@ curl -X POST \
       "custom": {
         "type": "template",
         "template": {
-          "namespace": "88b39973_f0d5_54e1_29cf_e80f1e3da4f2",
-          "name": "upcoming_trip_reminder",
+          "namespace": "'$WHATSAPP_TEMPLATE_NAMESPACE'",
+          "name": "'$WHATSAPP_TEMPLATE_NAME'",
           "language": {
             "code": "en",
             "policy": "deterministic"

@@ -20,7 +20,8 @@ curl -X POST \
       "content":{
          "type":"template",
          "template":{
-            "name":"WhatsApp_namespace:template_name",
+            "namespace": "'$WHATSAPP_TEMPLATE_NAMESPACE'",
+            "name":"'$WHATSAPP_TEMPLATE_NAME'",
             "parameters":[
                {
                   "default":"Nexmo Verification"
