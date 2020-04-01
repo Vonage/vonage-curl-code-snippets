@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+
+source "../../../config.sh"
+
 curl -X POST $MESSAGES_SANDBOX_URL \
    -u $NEXMO_API_KEY:$NEXMO_API_SECRET \
    -H 'Content-Type: application/json' \

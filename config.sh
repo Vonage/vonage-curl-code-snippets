@@ -33,6 +33,12 @@ FILE_CAPTION=${FILE_CAPTION:-""}
 AUDIO_URL=${AUDIO_URL:-""}
 VIDEO_URL=${VIDEO_URL:-""}
 
+# Messages Sandbox testing
+MESSAGES_SANDBOX_URL=${MESSAGES_SANDBOX_URL:-"https://messages-sandbox.nexmo.com/v0.1/messages"}
+FB_SANDBOX_ID=${FB_SANDBOX_ID:-"107083064136738"}
+VIBER_SANDBOX_ID=${VIBER_SANDBOX_ID:-"16273"}
+WHATSAPP_SANDBOX_NUMBER=${WHATSAPP_SANDBOX_NUMBER:-"14157386170"}
+
 ACCOUNT_ID=${ACCOUNT_ID:-""} # For APIs that allow you to access the resources of a sub account
 
 # Account API
