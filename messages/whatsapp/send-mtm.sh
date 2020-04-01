@@ -4,9 +4,10 @@ source "../../config.sh"
 source "../../jwt.sh"
 
 curl -X POST \
-  https://api.nexmo.com/v0.1/messages \
-  -H 'Authorization: Bearer' $JWT \
+  $API_ENDPOINT \
+  -u $NEXMO_API_KEY:$NEXMO_API_SECRET \
   -H 'Content-Type: application/json' \
+  -H 'Accept: application/json' \
   -d '{
    "from":{
       "type":"whatsapp",
