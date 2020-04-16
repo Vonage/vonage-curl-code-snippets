@@ -33,6 +33,10 @@ FILE_CAPTION=${FILE_CAPTION:-""}
 AUDIO_URL=${AUDIO_URL:-""}
 VIDEO_URL=${VIDEO_URL:-""}
 
+# Production testing
+MESSAGES_API_URL=${MESSAGES_API_URL:-"https://api.nexmo.com/v0.1/messages"}
+DISPATCH_API_URL=${DISPATCH_API_URL:-"https://api.nexmo.com/v0.1/dispatch"}
+
 # Messages Sandbox testing
 MESSAGES_SANDBOX_URL=${MESSAGES_SANDBOX_URL:-"https://messages-sandbox.nexmo.com/v0.1/messages"}
 FB_SANDBOX_ID=${FB_SANDBOX_ID:-"107083064136738"}
