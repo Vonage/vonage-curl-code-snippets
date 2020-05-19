@@ -34,7 +34,6 @@ curl -X POST $MESSAGES_API_URL \
          }
       },
       "whatsapp": {
-        "policy": "deterministic",
       	"locale": "en-GB"
       }
    }
