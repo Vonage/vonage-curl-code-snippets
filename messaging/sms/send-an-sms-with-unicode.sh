@@ -2,7 +2,7 @@
 source "../../config.sh"
 
 curl -X "POST" "https://rest.nexmo.com/sms/json" \
-  -d "from=AcmeInc" \
+  -d "from=$NEXMO_BRAND_NAME" \
   -d "to=$TO_NUMBER" \
   -d "text=こんにちは世界" \
   -d "type=unicode" \
