@@ -4,4 +4,3 @@ source "../config.sh"
 
 curl -u "$NEXMO_API_KEY:$NEXMO_API_SECRET" \
      "https://api.nexmo.com/v2/reports/$REQUEST_ID?account_id=$ACCOUNT_ID&status=$REPORT_STATUS"
-     
