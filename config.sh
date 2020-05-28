@@ -80,9 +80,6 @@ WEBHOOK_URL=${WEBHOOK_URL:-""}
 # MMS
 IMG_URL=${IMG_URL:-""}
 
-# Reporting v1 
-REPORT=${REPORT_URL:-""}
-
 # Reports v2 API
 ACCOUNT_ID=${ACCOUNT_ID:-""}
 DATE_START=${DATE_START:-""}
