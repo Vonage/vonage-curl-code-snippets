@@ -7,5 +7,6 @@ curl -X POST "https://api.nexmo.com/v2/reports" \
   -u "$NEXMO_API_KEY:$NEXMO_API_SECRET" \
   -d $'{
   "product": "CONVERSATIONS",
-  "account_id": "'$ACCOUNT_ID'"
+  "account_id": "'$ACCOUNT_ID'",
+  "type": "ip-voice"
 }'
