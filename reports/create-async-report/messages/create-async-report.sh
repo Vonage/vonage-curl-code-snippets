@@ -8,5 +8,9 @@ curl -X POST "https://api.nexmo.com/v2/reports" \
   -d $'{
   "product": "MESSAGES",
   "account_id": "'$ACCOUNT_ID'",
-  "direction": "'$REPORT_DIRECTION'"
+  "direction": "'$REPORT_DIRECTION'",
+  "status": "'$REPORT_STATUS'",
+  "date_start": "'$DATE_START'",
+  "date_end": "'$DATE_END'",
+  "include_message": true  
 }'
