@@ -9,7 +9,7 @@ curl -X POST "https://api.nexmo.com/v2/reports" \
   "product": "'$REPORT_PRODUCT'",
   "account_id": "'$ACCOUNT_ID'",
   "direction": "'$REPORT_DIRECTION'",
-  "status": "'$REPORT_STATUS'",
+  "status": "'$STATUS'",
   "date_start": "'$DATE_START'",
   "date_end": "'$DATE_END'"
 }'
