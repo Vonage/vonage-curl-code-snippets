@@ -8,5 +8,5 @@ curl -X POST "https://api.nexmo.com/v2/reports" \
   -d $'{
   "product": "CONVERSATIONS",
   "account_id": "'$ACCOUNT_ID'",
-  "type": "ip-voice"
+  "type": "'$TYPE'"
 }'
