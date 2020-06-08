@@ -12,5 +12,5 @@ curl -X POST "https://api.nexmo.com/v2/reports" \
   "status": "'$REPORT_STATUS'",
   "date_start": "'$DATE_START'",
   "date_end": "'$DATE_END'",
-  "include_message": true  
+  "include_message": "'$INCLUDE_MESSAGE'"  
 }'

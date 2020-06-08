@@ -8,5 +8,5 @@ curl -X POST "https://api.nexmo.com/v2/reports" \
     -d $'{
   "product": "VERIFY-API",
   "account_id": "'$ACCOUNT_ID'",
-  "include_subaccounts": true
+  "include_subaccounts": "'$INCLUDE_SUBACCOUNTS'"
 }'
