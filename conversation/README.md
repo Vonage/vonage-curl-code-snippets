@@ -77,7 +77,7 @@ not have any Legs. The quickest way to create a Leg for testing
 purposes is as follows:
 
 1. Link a Nexmo Number to the Nexmo Application you are using to test these scripts.
-2. Call that Nexmo number from your mobile phone. Let the call end. 
+2. Call that Nexmo number from your mobile phone. Let the call end.
 
 Now that at least one leg has been created:
 
