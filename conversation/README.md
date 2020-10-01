@@ -15,16 +15,16 @@ NEXMO_APPLICATION_ID="Your APP_ID"
 NEXMO_PRIVATE_KEY="/path/to/private.key"
 ```
 
-These are used to generate a valid JWT for authenticating your API calls.
+These are used to generate a valid [JWT](https://jwt.io/) (JSON Web Token) for authenticating your API calls.
 
-You can also add the following to the file:
+You can also add one or more of the following lines to the file:
 
 ```
-CONVERSATION_ID=""
-USER_ID=""
-MEMBER_ID=""
-EVENT_ID=""
-LEG_ID=""
+CONVERSATION_ID="custom_conversation_id"
+USER_ID="custom_user_id"
+MEMBER_ID="custom_member_id"
+EVENT_ID="custom_event_id"
+LEG_ID="custom_leg_id"
 ```
 
 These are used to test various objects in the Conversation API.
