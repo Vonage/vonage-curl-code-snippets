@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source "../config.sh"
+source "../../config.sh"
 
 curl -X POST "https://api.nexmo.com/v2/reports" \
   -H 'Content-Type: application/json; charset=utf-8' \
