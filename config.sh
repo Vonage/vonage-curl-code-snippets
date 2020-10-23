@@ -50,6 +50,7 @@ ACCOUNT_ID=${ACCOUNT_ID:-""} # For APIs that allow you to access the resources o
 
 # Account API
 SECRET_ID=${SECRET_ID:-""}
+TRX_ID=${TRX_ID:-""}
 
 # Subaccounts API
 NEW_SUBACCOUNT_NAME=${NEW_SUBACCOUNT_NAME:-""}
