@@ -18,7 +18,7 @@ This repository contains a main configuration file `config.sh` that is reference
 
 ## Run the code snippets
 
-As each example requires access to the configuration files, you must run them from the directory they reside in, for example:
+As each code snippet requires access to the configuration files, you must run them from the directory they reside in, for example:
 
 ```
 cd messaging/sms/
@@ -29,5 +29,5 @@ cd messaging/sms/
 
 Questions and comments are welcome! 
 
-You can create an issue on this repository. Patches are also very welcome, please go ahead and send us fixes or additional examples by opening a pull request.
+You can create an issue on this repository. Patches are also very welcome, please go ahead and send us fixes or additional code snippets by opening a pull request.
 
