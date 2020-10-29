@@ -14,7 +14,7 @@ If you don't have a Vonage API account, you'll need to [create one](https://dash
 
 You can find the API key and secret for your configuration settings in your [Dashboard](https://dashboard.nexmo.com).
 
-You can either directly edit the `config.sh` file and add in your configuration values, or you can create a `config.local.sh` file, which will override the main configuration file.
+This repository contains a main configuration file `config.sh` that is referenced by the code snippets. You can directly edit the `config.sh` file to add your information. Alternatively, you can create a `config.local.sh` file, which overrides the main configuration file. This allows you to keep your specific information separate from the main configuration.
 
 ## Run the code snippets
 
