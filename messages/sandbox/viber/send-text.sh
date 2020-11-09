@@ -3,7 +3,7 @@
 source "../../../config.sh"
 
 curl -X POST $MESSAGES_SANDBOX_URL \
-  -u $NEXMO_API_KEY:$NEXMO_API_SECRET \
+  -u $VONAGE_API_KEY:$VONAGE_API_SECRET \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -d '{
