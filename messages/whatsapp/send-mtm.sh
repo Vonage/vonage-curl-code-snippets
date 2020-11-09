@@ -22,7 +22,7 @@ curl -X POST $MESSAGES_API_URL \
             "name": "'$WHATSAPP_TEMPLATE_NAMESPACE':'$WHATSAPP_TEMPLATE_NAME'",
             "parameters":[
                {
-                  "default":"Nexmo Verification"
+                  "default":"Vonage Verification"
                },
                {
                   "default":"64873"

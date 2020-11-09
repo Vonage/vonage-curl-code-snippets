@@ -8,7 +8,7 @@ This repository is a collection of cURL code snippets, demonstrating the functio
 
 You will need [cURL](https://curl.haxx.se/) installed.
 
-If you don't have a Vonage API account, you'll need to [create one](https://dashboard.nexmo.com/sign-up)! 
+If you don't have a Vonage API account, you'll need to [create one](https://dashboard.nexmo.com/sign-up)!
 
 ## Configuration
 
@@ -20,14 +20,13 @@ This repository contains a main configuration file `config.sh` that is reference
 
 As each code snippet requires access to the configuration files, you must run them from the directory they reside in, for example:
 
-```
+``` shell
 cd messaging/sms/
 ./send-an-sms.sh
 ```
 
 ## Get in touch
 
-Questions and comments are welcome! 
+Questions and comments are welcome!
 
 You can create an issue on this repository. Patches are also very welcome, please go ahead and send us fixes or additional code snippets by opening a pull request.
-

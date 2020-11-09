@@ -10,6 +10,6 @@ curl -X POST https://api.nexmo.com/v1/calls\
       "ncco": [
         {
           "action": "talk",
-          "text": "This is a text to speech call from Nexmo"
+          "text": "This is a text to speech call from Vonage"
         }
       ]}'
