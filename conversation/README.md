@@ -11,8 +11,8 @@ Eventually I would like to write an automated script to do this but for now it's
 You will need to create a `config.local.sh` file. This will contain:
 
 ```
-NEXMO_APPLICATION_ID="Your APP_ID"
-NEXMO_PRIVATE_KEY="/path/to/private.key"
+VONAGE_APPLICATION_ID="Your APP_ID"
+VONAGE_PRIVATE_KEY="/path/to/private.key"
 ```
 
 These are used to generate a valid [JWT](https://jwt.io/) (JSON Web Token) for authenticating your API calls.

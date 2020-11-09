@@ -2,13 +2,13 @@
 command -v nexmo >/dev/null 2>&1 || { echo >&2 "The Nexmo CLI is not installed"; exit 1; }
 
 # Can we load the private key?
-if [ ! -f "$NEXMO_PRIVATE_KEY" ]; then
+if [ ! -f "$VONAGE_PRIVATE_KEY" ]; then
     echo "Could not load private key"
     exit 1
 fi
 
 # Do we have an application ID?
-if [ -z "$NEXMO_APPLICATION_ID" ]; then
+if [ -z "$VONAGE_APPLICATION_ID" ]; then
     echo "Application ID not provided"
     exit 1
 fi
@@ -17,5 +17,5 @@ fi
 ACL=""
 
 # Generate the JWT
-JWT="$(nexmo jwt:generate $NEXMO_PRIVATE_KEY application_id=$NEXMO_APPLICATION_ID)"
+JWT="$(nexmo jwt:generate $VONAGE_PRIVATE_KEY application_id=$VONAGE_APPLICATION_ID)"
 

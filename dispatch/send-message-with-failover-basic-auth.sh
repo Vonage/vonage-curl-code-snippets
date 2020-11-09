@@ -4,7 +4,7 @@ source "../config.sh"
 source "../jwt.sh"
 
 curl -X POST https://api.nexmo.com/v0.1/dispatch \
-  -u "$NEXMO_API_KEY:$NEXMO_API_SECRET" \
+  -u "$VONAGE_API_KEY:$VONAGE_API_SECRET" \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -d $'{
