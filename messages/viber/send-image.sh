@@ -8,14 +8,13 @@ curl -X POST $MESSAGES_API_URL \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -d $'{
-    "from": { "type": "viber_service_msg", "id": "'$VIBER_SERVICE_MESSAGE_ID'" },
-    "to": { "type": "viber_service_msg", "number": "'$TO_NUMBER'" },
-    "message": {
-       "content": {
-          "type": "image",
+
+          "message_type": "image",
           "image": {
-            "url": "'$IMAGE_URL'"
-          }
-       }
-    }  
+            "url": "https://example.com/image.jpg"
+          },
+          "to": "'$TO_NUMBER'",
+          "from": "'$FROM_NUMBER'",
+          "channel": "viber_service"
+
 }'

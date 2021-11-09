@@ -8,12 +8,11 @@ curl -X POST $MESSAGES_API_URL \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -d $'{
-    "from": { "type": "viber_service_msg", "id": "'$VIBER_SERVICE_MESSAGE_ID'" },
-    "to": { "type": "viber_service_msg", "number": "'$TO_NUMBER'" },
-    "message": {
-      "content": {
-        "type": "text",
-        "text": "This is a Viber Service Message sent from the Messages API"
-      }
-    }
+
+          "message_type": "text",
+          "text": "Nexmo Verification code: 12345. Valid for 10 minutes.",
+          "to": "'$TO_NUMBER'",
+          "from": "'$FROM_NUMBER'",
+          "channel": "viber_service"
+
   }'

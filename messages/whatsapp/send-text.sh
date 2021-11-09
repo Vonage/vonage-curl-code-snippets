@@ -8,12 +8,10 @@ curl -X POST $MESSAGES_API_URL \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -d $'{
-    "from": { "type": "whatsapp", "number": "'$WHATSAPP_NUMBER'" },
-    "to": { "type": "whatsapp", "number": "'$TO_NUMBER'" },
-    "message": {
-      "content": {
-        "type": "text",
-        "text": "This is a WhatsApp Message sent from the Messages API"
-      }
-    }
+
+      "message_type": "text",
+	    "text": "Nexmo Verification code: 12345. Valid for 10 minutes.",
+      "to": "'$TO_NUMBER'",
+      "from": "'$WHATSAPP_NUMBER'",
+      "channel":  "whatsapp"
   }'
