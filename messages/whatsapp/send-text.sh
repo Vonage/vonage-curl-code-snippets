@@ -10,7 +10,7 @@ curl -X POST $MESSAGES_API_URL \
   -d $'{
 
       "message_type": "text",
-	    "text": "Nexmo Verification code: 12345. Valid for 10 minutes.",
+      "text": "Nexmo Verification code: 12345. Valid for 10 minutes.",
       "to": "'$TO_NUMBER'",
       "from": "'$WHATSAPP_NUMBER'",
       "channel":  "whatsapp"
