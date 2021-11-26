@@ -1,21 +1,21 @@
-name: Push to Master
+name: Push to Main
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build:
     name: Update ADP Submodule
     runs-on: ubuntu-latest
     steps:
     - name: Update NDP Submodule
-      uses: nexmo/github-actions/submodule-auto-pr@master
+      uses: nexmo/github-actions/submodule-auto-pr@main
       env:
         GH_ADMIN_TOKEN: ${{ secrets.PDX_GH_TOKEN }}
-        PR_ACTIVE_BRANCH: master
+        PR_ACTIVE_BRANCH: main
         PR_BRANCH_NAME: automated-curl-snippets-update
         PR_SUBMODULE_PATH: .repos/vonage/vonage-curl-code-snippets
-        PR_TARGET_BRANCH: master
+        PR_TARGET_BRANCH: main
         PR_TARGET_ORG: nexmo
         PR_TARGET_REPO: nexmo-developer
         PR_TITLE: vonage-curl-code-snippets Update
