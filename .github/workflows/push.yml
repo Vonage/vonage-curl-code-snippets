@@ -2,7 +2,7 @@ name: Push to Main
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build:
     name: Update ADP Submodule
