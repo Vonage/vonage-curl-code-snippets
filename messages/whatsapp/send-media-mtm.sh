@@ -7,61 +7,20 @@ curl -X POST $MESSAGES_API_URL \
   -H 'Authorization: Bearer' $JWT \
   -H 'Content-Type: application/json' \
   -d '{
-  "from": {
-    "type": "whatsapp",
-    "number": "'$WHATSAPP_NUMBER'"
+  "message_type": "template",
+  "template": {
+    "name": "'$WHATSAPP_TEMPLATE_NAMESPACE':'$WHATSAPP_TEMPLATE_NAME'",
+    "parameters": [
+      "Value 1",
+      "Value 2",
+      "Value 3"
+    ]
   },
-  "to": {
-    "type": "whatsapp",
-    "number": "'$TO_NUMBER'"
-  },
-  "message": {
-    "content": {
-      "type": "custom",
-      "custom": {
-        "type": "template",
-        "template": {
-          "namespace": "'$WHATSAPP_TEMPLATE_NAMESPACE'",
-          "name": "'$WHATSAPP_TEMPLATE_NAME'",
-          "language": {
-            "policy": "deterministic",
-            "code": "en"
-          },
-          "components": [
-            {
-              "type": "header",
-              "parameters": [
-                {
-                  "type": "location",
-                  "location": {
-                    "longitude": -122.425332,
-                    "latitude": 37.758056,
-                    "name": "Facebook HQ",
-                    "address": "1 Hacker Way, Menlo Park, CA 94025"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "body",
-              "parameters": [
-                {
-                  "type": "text",
-                  "text": "Value 1"
-                },
-                {
-                  "type": "text",
-                  "text": "Value 2"
-                },
-                {
-                  "type": "text",
-                  "text": "Value 3"
-                }
-              ]
-            }
-          ]
-        }
-      }
-    }
+  "to": "'$TO_NUMBER'",
+  "from": "'$WHATSAPP_NUMBER'",
+  "channel": "whatsapp",
+  "whatsapp": {
+    "policy": "deterministic",
+    "locale": "en-US"
   }
 }'
