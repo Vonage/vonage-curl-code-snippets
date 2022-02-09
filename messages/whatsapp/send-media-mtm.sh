@@ -10,7 +10,7 @@ curl -X POST $MESSAGES_API_URL \
   "message_type": "custom",
   "to": "'$TO_NUMBER'",
   "from": "'$WHATSAPP_NUMBER'",
-  "channel": "whatsapp"
+  "channel": "whatsapp",
   "custom": {
     "type": "template",
     "template": {
