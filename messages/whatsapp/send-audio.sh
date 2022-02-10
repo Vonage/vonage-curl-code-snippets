@@ -12,7 +12,7 @@ curl -X POST $MESSAGES_API_URL \
   "audio": {
     "url": "'$AUDIO_URL'"
   },
-  "to": "447700900000",
+  "to": "'$TO_NUMBER'",
   "from": "'$WHATSAPP_NUMBER'",
-  "channel": "'$TO_NUMBER'"
+  "channel": "whatsapp"
 }'
