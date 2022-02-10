@@ -8,15 +8,12 @@ curl -X POST $MESSAGES_API_URL \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -d $'{
-    "from": { "type": "whatsapp", "number": "'$WHATSAPP_NUMBER'" },
-    "to": { "type": "whatsapp", "number": "'$TO_NUMBER'" },
-    "message": {
-      "content": {
-        "type": "video",
-        "video": { 
-          "url": "'$VIDEO_URL'",
-          "caption": "'$VIDEO_CAPTION'"
-        }
-      }
-    }
-  }'
+  "message_type": "video",
+  "video": {
+    "url": "'$VIDEO_URL'",
+    "caption": "'$VIDEO_CAPTION'"
+  },
+  "to": "'$TO_NUMBER'",
+  "from": "'$WHATSAPP_NUMBER'",
+  "channel": "whatsapp"
+}'
