@@ -7,20 +7,11 @@ curl -X POST $MESSAGES_API_URL \
      -H 'Authorization: Bearer '$JWT \
      -H 'Content-Type: application/json' \
      -d $'{
-  "to": {
-    "type": "messenger",
-    "id": "'$FB_RECIPIENT_ID'"
+  "message_type": "audio",
+  "audio": {
+    "url": "'$AUDIO_URL'"
   },
-  "message": {
-    "content": {
-      "type": "audio",
-      "audio": {
-        "url": "'$AUDIO_URL'"
-      }
-    }
-  },
-  "from": {
-    "type": "messenger",
-    "id": "'$FB_SENDER_ID'"
-  }
+  "to": "'$FB_RECIPIENT_ID'",
+  "from": "'$FB_SENDER_ID'",
+  "channel": "messenger"
 }'
