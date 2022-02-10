@@ -4,9 +4,9 @@ source "../../config.sh"
 source "../../jwt.sh"
 
 curl -X POST $MESSAGES_API_URL \
-  -H 'Authorization: Bearer' $JWT \
-  -H 'Content-Type: application/json' \
-  -d '{
+     -H 'Authorization: Bearer' $JWT \
+     -H 'Content-Type: application/json' \
+     -d '{
   "message_type": "custom",
   "to": "447700900000",
   "from": "447700900001",
