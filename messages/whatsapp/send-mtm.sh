@@ -4,11 +4,11 @@ source "../../config.sh"
 source "../../jwt.sh"
 
 curl -X POST $MESSAGES_API_URL \
-     -H 'Authorization: Bearer' $JWT \
+     -H "Authorization: Bearer $JWT" \
      -H 'Content-Type: application/json' \
      -d '{
-   "to": "$TO_NUMBER",
-   "from": "$WHATSAPP_NUMBER",
+   "to": "'$TO_NUMBER'",
+   "from": "'$WHATSAPP_NUMBER'",
    "channel": "whatsapp",
    "message_type": "template",
    "whatsapp": {
