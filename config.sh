@@ -38,14 +38,14 @@ AUDIO_URL=${AUDIO_URL:-""}
 VIDEO_URL=${VIDEO_URL:-""}
 
 # Production testing
-MESSAGES_API_URL=${MESSAGES_API_URL:-"https://api.nexmo.com/v0.1/messages"}
+MESSAGES_API_URL=${MESSAGES_API_URL:-"https://api.nexmo.com/v1/messages/"}
 DISPATCH_API_URL=${DISPATCH_API_URL:-"https://api.nexmo.com/v0.1/dispatch"}
 
 # Messages Sandbox testing
-MESSAGES_SANDBOX_URL=${MESSAGES_SANDBOX_URL:-"https://messages-sandbox.nexmo.com/v0.1/messages"}
-FB_SANDBOX_ID=${FB_SANDBOX_ID:-"107083064136738"}
+MESSAGES_SANDBOX_URL=${MESSAGES_SANDBOX_URL:-"https://messages-sandbox.nexmo.com/v1/messages"}
+FB_SANDBOX_ID=${FB_SANDBOX_ID:-"100614398987044"}
 VIBER_SANDBOX_ID=${VIBER_SANDBOX_ID:-"16273"}
-WHATSAPP_SANDBOX_NUMBER=${WHATSAPP_SANDBOX_NUMBER:-"14157386170"}
+WHATSAPP_SANDBOX_NUMBER=${WHATSAPP_SANDBOX_NUMBER:-"14157386102"}
 
 ACCOUNT_ID=${ACCOUNT_ID:-""} # For APIs that allow you to access the resources of a sub account
 
