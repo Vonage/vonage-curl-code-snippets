@@ -17,7 +17,7 @@ curl -X POST $MESSAGES_API_URL \
       "type": "product_list",
       "header":{
         "type": "text",
-        "text": "Out top products"
+        "text": "Our top products"
       },
       "body": {
         "text": "Check out these great products"
@@ -29,10 +29,10 @@ curl -X POST $MESSAGES_API_URL \
         "catalog_id": "'$CATALOG_ID'",
         "sections": [
           {
-            "title": "Cool products",             
+            "title": "Cool products",
             "product_items": [
               { "product_retailer_id": "'$PRODUCT_ID'" },
-              { "product_retailer_id": "'$PRODUCT_ID'" },
+              { "product_retailer_id": "'$PRODUCT_ID'" }
             ]
           },
           {
@@ -40,7 +40,7 @@ curl -X POST $MESSAGES_API_URL \
             "product_items": [
               { "product_retailer_id": "'$PRODUCT_ID'" }
             ]
-          },
+          }
         ]
       }
     }
