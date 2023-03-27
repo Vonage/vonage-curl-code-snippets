@@ -2,5 +2,5 @@
 source "../../config.sh"
 
 curl -X PUT -H "Content-Type: application/json" \
-    -d '{"name": "'$SIP_DOMAIN'", "application_id": "'$VONAGE_APPLICATION_ID'", "acl": ["188.180.180.180", "77.77.77.0/24"]}' \
+    -d '{"name": "'$SIP_DOMAIN'", "application_id": "'$VONAGE_APPLICATION_ID'", "acl": ["0.0.0.0/0"], "tls": "always", "srtp": "never", "digest_auth": true}' \
     https://api.nexmo.com/v1/psip/$SIP_DOMAIN -u $VONAGE_API_KEY:$VONAGE_API_SECRET
