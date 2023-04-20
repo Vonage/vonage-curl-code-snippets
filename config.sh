@@ -113,8 +113,10 @@ VBC_USER_ID=${VBC_USER_ID:-""}
 VBC_USERNAME=${VBC_USERNAME:-""}
 VBC_PASSWORD=${VBC_PASSWORD:-""}
 
-# Voice
+# Voice / SIP
 SIP_DOMAIN=${SIP_DOMAIN:-""}
+SIP_USER_ID=${SIP_USER_ID:-""}
+SIP_USER_SECRET=${SIP_USER_SECRET:-""}
 
 # If we have a local config, override using that
 CONFIG_DIR=$(dirname "${BASH_SOURCE[0]}")
