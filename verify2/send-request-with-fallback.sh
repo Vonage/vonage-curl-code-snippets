@@ -15,8 +15,7 @@ curl --X POST \
       },
 			{
          "channel": "email",
-         "to": "'$EMAIL_TO'",
-		 		 "from": "'$EMAIL_FROM'"
+         "to": "'$EMAIL_TO'"
       }
    ]
 }'
