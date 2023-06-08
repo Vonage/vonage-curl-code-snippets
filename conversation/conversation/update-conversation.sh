@@ -3,7 +3,7 @@
 source "../../config.sh"
 source "../../jwt.sh"
 
-curl -X "PUT" "https://api.nexmo.com/v0.1/conversations/$CONVERSATION_ID" \
+curl -X "PUT" "https://api.nexmo.com/v1/conversations/$CONVERSATION_ID" \
      -H 'Authorization: Bearer '$JWT\
      -H 'Content-Type: application/json' \
      -d $'{
