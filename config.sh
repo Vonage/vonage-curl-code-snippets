@@ -118,6 +118,10 @@ SIP_DOMAIN=${SIP_DOMAIN:-""}
 SIP_USER_ID=${SIP_USER_ID:-""}
 SIP_USER_SECRET=${SIP_USER_SECRET:-""}
 
+# Meetings API
+ROOM_DISPLAY_NAME={ROOM_DISPLAY_NAME:-""}
+EXPIRATION_DATE={EXPIRATION_DATE:-""}
+
 # If we have a local config, override using that
 CONFIG_DIR=$(dirname "${BASH_SOURCE[0]}")
 if [ -f "$CONFIG_DIR/config.local.sh" ]; then
