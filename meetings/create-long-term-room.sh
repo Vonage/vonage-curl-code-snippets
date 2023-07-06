@@ -7,7 +7,7 @@ curl --X POST \
   -H "Authorization: Bearer "$JWT \
   -H "Content-Type: application/json" \
   -d '{
-      "display_name":"'ROOM_DISPLAY_NAME'",
+      "display_name":"'$ROOM_DISPLAY_NAME'",
       "type":"long_term",
       "expires_at":"'$EXPIRATION_DATE'"
   }'
