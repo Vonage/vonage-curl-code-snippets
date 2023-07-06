@@ -2,4 +2,4 @@
 source "../config.sh"
 source "../jwt.sh"
 
-curl --location --request DELETE 'https://api-eu.vonage.com/meetings/themes/{THEME_ID}?force=true'
+curl --location --request DELETE 'https://api-eu.vonage.com/meetings/themes/e8b1d80b-8f78-4578-94f2-328596e01387?force=true'

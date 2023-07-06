@@ -3,5 +3,5 @@ source "../config.sh"
 source "../jwt.sh"
 
 curl -X GET 'https://api-eu.vonage.com/meetings/rooms/' \
--H 'Authorization: Bearer $JWT' \
+-H 'Authorization: Bearer' $JWT \
 -H 'Content-Type: application/json'

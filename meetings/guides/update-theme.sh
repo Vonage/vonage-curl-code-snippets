@@ -4,7 +4,7 @@ source "../jwt.sh"
 
 curl -X PATCH 'https://api-eu.vonage.com/meetings/themes/86da462e-fac4-4f46-87ed-63eafc81be48' \
 -H 'Content-Type: application/json' \
--H 'Authorization: Bearer $JWT' \
+-H 'Authorization: Bearer' $JWT \
 -d '{
   "update_details": {
       "theme_name": "Theme1",
