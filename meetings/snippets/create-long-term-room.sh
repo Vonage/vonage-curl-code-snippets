@@ -2,8 +2,7 @@
 source "../config.sh"
 source "../jwt.sh"
   
-curl --X POST \
-  --url https://api-eu.vonage.com/meetings/rooms \
+curl -X POST https://api-eu.vonage.com/meetings/rooms \
   -H "Authorization: Bearer "$JWT \
   -H "Content-Type: application/json" \
   -d '{

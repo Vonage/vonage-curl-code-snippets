@@ -2,8 +2,7 @@
 source "../config.sh"
 source "../jwt.sh"
 
-curl --X PATCH \
-  --url https://api-eu.vonage.com/meetings/applications \
+curl -X PATCH https://api-eu.vonage.com/meetings/applications \
   -H "Authorization: Bearer "$JWT \
   -H "Content-Type: application/json" \
   -d '{
