@@ -12,6 +12,6 @@ curl --X POST \
       {
          "channel": "whatsapp",
          "to": "'$TO_NUMBER'"
-      },
+      }
    ]
 }'

@@ -11,7 +11,7 @@ curl --X POST \
    "workflow": [
 			{
          "channel": "email",
-         "to": "'$EMAIL_TO'",
+         "to": "'$EMAIL_TO'"
       }
    ]
 }'
