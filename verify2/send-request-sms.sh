@@ -12,6 +12,6 @@ curl --X POST \
       {
          "channel": "sms",
          "to": "'$TO_NUMBER'"
-      },
+      }
    ]
 }'

@@ -12,6 +12,6 @@ curl --X POST \
       {
          "channel": "silent_auth",
          "to": "'$TO_NUMBER'"
-      },
+      }
    ]
 }'

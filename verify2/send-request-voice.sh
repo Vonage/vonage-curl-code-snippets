@@ -12,6 +12,6 @@ curl --X POST \
       {
          "channel": "voice",
          "to": "'$TO_NUMBER'"
-      },
+      }
    ]
 }'
