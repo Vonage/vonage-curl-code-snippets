@@ -3,7 +3,7 @@ source "../config.sh"
 source "../jwt.sh"
 
 curl -X POST https://api-eu.vonage.com/meetings/themes \
-  -H "Authorization: Bearer "$JWT \
+  -H "Authorization: Bearer $JWT" \
   -H "Content-Type: application/json" \
   -d '{
     "main_color": "'$MAIN_COLOR'",

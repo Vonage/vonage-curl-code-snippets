@@ -3,7 +3,7 @@ source "../config.sh"
 source "../jwt.sh"
 
 curl -X PATCH "https://api-eu.vonage.com/meetings/rooms/"$ROOM_ID \
-  -H "Authorization: Bearer "$JWT \
+  -H "Authorization: Bearer $JWT" \
   -H "Content-Type: application/json" \
   -d '{
        "update_details": {
