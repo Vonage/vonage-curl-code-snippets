@@ -3,5 +3,5 @@ source "../../config.sh"
 source "../../jwt.sh"
 
 curl "https://api.nexmo.com/v1/calls" \
-  -H "Authorization: Bearer "$JWT \
+  -H "Authorization: Bearer $JWT" \
 
