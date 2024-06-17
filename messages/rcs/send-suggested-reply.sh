@@ -15,13 +15,13 @@ curl -X POST $MESSAGES_API_URL \
       "suggestions": [
         {
           "reply": {
-            "text": "They're great!",
+            "text": "They\'re great!",
             "postbackData": "suggestion_1"
           }
         },
         {
           "reply": {
-            "text": "They're awesome!",
+            "text": "They\'re awesome!",
             "postbackData": "suggestion_2"
           }
         }
