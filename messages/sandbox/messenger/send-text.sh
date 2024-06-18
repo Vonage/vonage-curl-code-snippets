@@ -7,8 +7,8 @@ curl -X POST $MESSAGES_SANDBOX_URL \
    -H 'Content-Type: application/json' \
    -H 'Accept: application/json' \
    -d '{
-     "from": { "type": "messenger", "id": "'$FB_SANDBOX_ID'" },
-     "to": { "type": "messenger", "id": "'$FB_RECIPIENT_ID'" },
+     "from": { "type": "messenger", "id": "'$MESSAGES_SANDBOX_FB_ID'" },
+     "to": { "type": "messenger", "id": "'$MESSAGES_SANDBOX_ALLOW_LISTED_FB_RECIPIENT_ID'" },
      "message": {
       "content": {
         "type": "text",

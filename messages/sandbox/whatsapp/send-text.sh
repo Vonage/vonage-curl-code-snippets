@@ -7,8 +7,8 @@ curl -X POST $MESSAGES_SANDBOX_URL \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -d '{
-    "from": { "type": "whatsapp", "number": "'$WHATSAPP_SANDBOX_NUMBER'" },
-    "to": { "type": "whatsapp", "number": "'$TO_NUMBER'" },
+    "from": { "type": "whatsapp", "number": "'$MESSAGES_SANDBOX_WHATSAPP_NUMBER'" },
+    "to": { "type": "whatsapp", "number": "'$MESSAGES_SANDBOX_ALLOW_LISTED_TO_NUMBER'" },
     "message": {
       "content": {
         "type": "text",
