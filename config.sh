@@ -42,6 +42,7 @@ VIDEO_URL=${VIDEO_URL:-""}
 
 # Production testing
 MESSAGES_API_URL=${MESSAGES_API_URL:-"https://api.nexmo.com/v1/messages/"}
+GEOSPECIFIC_MESSAGES_API_URL=${GEOSPECIFIC_MESSAGES_API_URL:-""}
 DISPATCH_API_URL=${DISPATCH_API_URL:-"https://api.nexmo.com/v0.1/dispatch"}
 
 # Messages Sandbox testing
@@ -70,6 +71,10 @@ EVENT_UUID=${EVENT_UUID:-""}  # UUID of audit event
 SEARCH_TEXT=${SEARCH_TEXT:-"number"}
 DATE_FROM=${DATE_FROM:-"2018-07-01"}
 DATE_TO=${DATE_TO:-"2018-08-01"}
+
+# Messages API
+
+MESSAGE_UUID=${MESSAGE_UUID:-""}
 
 # Numbers
 NUMBER_SEARCH_CRITERIA=${NUMBER_SEARCH_CRITERIA:-""}
