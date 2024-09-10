@@ -2,10 +2,12 @@
 source "../config.sh"
 source "../jwt.sh"
 
-curl -X POST \
-  --url https://api.nexmo.com/v2/verify/$REQUEST_ID \
+curl -X PATCH \
+  --url https://api.nexmo.com/v2/verify/templates/$TEMPLATE_ID \
   -H "Authorization: Bearer $JWT"\
   -H 'Content-Type: application/json' \
   -d $'{
-    "code": "'$CODE'"
+	 "name": "my-renamed-template",
+     "is_default": false,
+   "
 }'
