@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+source "../../config.sh"
 source "../../jwt.sh"
 source "oidc.sh"
 
