@@ -136,6 +136,13 @@ SIP_USER_SECRET=${SIP_USER_SECRET:-""}
 ROOM_DISPLAY_NAME={ROOM_DISPLAY_NAME:-""}
 EXPIRATION_DATE={EXPIRATION_DATE:-""}
 
+# Network APIs
+PHONE_NUMBER=${PHONE_NUMBER:-""}
+MAX_AGE=${MAX_AGE:-""}
+AUTH_REQ_ID=${AUTH_REQ_ID:-""}
+AUTH_CODE=${AUTH_CODE:-""}
+REDIRECT_URI=${REDIRECT_URI:-""}
+
 # If we have a local config, override using that
 CONFIG_DIR=$(dirname "${BASH_SOURCE[0]}")
 if [ -f "$CONFIG_DIR/config.local.sh" ]; then
