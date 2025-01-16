@@ -115,7 +115,7 @@ REQUEST_ID=${REQUEST_ID:-""}
 CODE=${CODE:=""}
 WORKFLOW_ID=${WORKFLOW_ID:-"1"}
 TEMPLATE_ID=${TEMPLATE_ID:-""}
-$TEMPLATE_FRAGMENT_ID=${TEMPLATE_FRAGMENT_ID:-""}
+TEMPLATE_FRAGMENT_ID=${TEMPLATE_FRAGMENT_ID:-""}
 
 # Vonage Business Cloud
 VBC_CLIENT_ID=${VBC_CLIENT_ID:-""}
@@ -142,6 +142,11 @@ MAX_AGE=${MAX_AGE:-""}
 AUTH_REQ_ID=${AUTH_REQ_ID:-""}
 AUTH_CODE=${AUTH_CODE:-""}
 REDIRECT_URI=${REDIRECT_URI:-""}
+
+# Application API
+USER_ID=${USER_ID:-""}
+USER_NAME=${USER_NAME:-"my_user_name"}
+USER_DISPLAY_NAME=${USER_DISPLAY_NAME:-"My User Name"}
 
 # If we have a local config, override using that
 CONFIG_DIR=$(dirname "${BASH_SOURCE[0]}")
