@@ -2,6 +2,6 @@
 
 source "../config.sh"
 
-curl -X PATCH -u $VONAGE_API_KEY:$VONAGE_API_SECRET https://api.nexmo.com/accounts/$VONAGE_API_KEY/subaccounts/$SUBACCOUNT_KEY  \
+curl -X "PATCH" "https://api.nexmo.com/accounts/$VONAGE_API_KEY/subaccounts/$SUBACCOUNT_KEY" -u $VONAGE_API_KEY:$VONAGE_API_SECRET \
      -H "Content-Type: application/json"  \
      -d $'{"suspended":true}'
