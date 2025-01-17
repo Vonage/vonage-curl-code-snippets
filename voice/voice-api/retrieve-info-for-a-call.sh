@@ -2,6 +2,6 @@
 source "../../config.sh"
 source "../../jwt.sh"
 
-curl "https://api.nexmo.com/v1/calls/"$UUID \
+curl "https://api.nexmo.com/v1/calls/"$VOICE_CALL_UUID \
   -H "Authorization: Bearer $JWT" \
 
