@@ -44,6 +44,14 @@ curl -X "POST" "https://api.nexmo.com/v2/applications" \
         }
       }
     },
-    "vbc": {}
+    "vbc": {},
+    "verify": {
+      "webhooks": {
+        "status_url": {
+          "address": "https://example.com/webhooks/status",
+          "http_method": "POST"
+        }
+      }
+    }
   }
 }'

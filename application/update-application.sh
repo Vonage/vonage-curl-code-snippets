@@ -40,7 +40,15 @@ curl -X "PUT" "https://api.nexmo.com/v2/applications/$VONAGE_APPLICATION_ID" \
         }
       }
     },
-    "vbc": {}
+    "vbc": {},
+    "verify": {
+      "webhooks": {
+        "status_url": {
+          "address": "https://example.com/webhooks/status",
+          "http_method": "POST"
+        }
+      }
+    }
   }
 }'
 
