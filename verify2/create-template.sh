@@ -4,9 +4,8 @@ source "../jwt.sh"
 
 curl -X POST \
   --url https://api.nexmo.com/v2/verify/templates \
-  -H "Authorization: Bearer $JWT"\
-  -H 'Content-Type: application/json' \
-  -d $'{
-	 "name": "my-template",
-   "
-}'
+  -H "Authorization: Bearer $JWT" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "my-template"
+  }'

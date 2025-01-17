@@ -7,15 +7,15 @@ curl -X POST \
   -H "Authorization: Bearer $JWT"\
   -H 'Content-Type: application/json' \
   -d $'{
-	 "brand": "'$BRAND_NAME'",
+	 "brand": "'$VERIFY_BRAND_NAME'",
    "workflow": [
       {
          "channel": "silent_auth",
-         "to": "'$TO_NUMBER'"
+         "to": "'$VERIFY_NUMBER'"
       },
 			{
          "channel": "email",
-         "to": "'$EMAIL_TO'"
+         "to": "'$VERIFY_EMAIL_TO'"
       }
    ]
 }'

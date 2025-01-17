@@ -7,11 +7,11 @@ curl -X POST \
   -H "Authorization: Bearer $JWT"\
   -H 'Content-Type: application/json' \
   -d $'{
-	 "brand": "'$BRAND_NAME'",
+	 "brand": "'$VERIFY_BRAND_NAME'",
    "workflow": [
       {
          "channel": "whatsapp_interactive",
-         "to": "'$TO_NUMBER'"
+         "to": "'$VERIFY_NUMBER'"
       }
    ]
 }'
