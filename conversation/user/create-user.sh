@@ -7,8 +7,6 @@ curl -X "POST" "https://api.nexmo.com/v1/users" \
      -H 'Authorization: Bearer '$JWT\
      -H 'Content-Type: application/json' \
      -d $'{
-  "name": "$USER_NAME",
-  "display_name": "$USER_DISPLAY_NAME"
+  "name": "'$USER_NAME'",
+  "display_name": "'$USER_DISPLAY_NAME'"
 }'
-
-

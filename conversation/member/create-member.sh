@@ -3,12 +3,14 @@
 source "../../config.sh"
 source "../../jwt.sh"
 
-curl -X "POST" "https://api.nexmo.com/v0.3/conversations/$CONVERSATION_ID/members" \
+curl -X "POST" "https://api.nexmo.com/v1/conversations/$CONVERSATION_ID/members" \
      -H 'Authorization: Bearer '$JWT\
      -H 'Content-Type: application/json' \
      -d $'{
-  "user_id": "'$USER_ID'",
-  "action": "invite",
+  "user": {
+    "id": "'$USER_ID'"
+  }
+  "state": "invited",
   "channel": {
     "type": "app"
   }
