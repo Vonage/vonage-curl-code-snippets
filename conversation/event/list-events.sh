@@ -3,7 +3,7 @@
 source "../../config.sh"
 source "../../jwt.sh"
 
-curl "https://api.nexmo.com/v1/conversations/$CONVERSATION_ID/events" \
+curl "https://api.nexmo.com/v1/conversations/$CONV_ID/events" \
      -H 'Authorization: Bearer '$JWT\
      -H 'Content-Type: application/json'
 
