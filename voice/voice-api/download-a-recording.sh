@@ -2,7 +2,7 @@
 source "../../config.sh"
 source "../../jwt.sh"
 
-curl $RECORDING_URL \
+curl $VOICE_RECORDING_URL \
   -H "Authorization: Bearer $JWT" \
   --output recording.mp3
 
