@@ -10,5 +10,3 @@ curl -X POST "https://api.nexmo.com/v2/verify/templates/$VERIFY_TEMPLATE_ID/temp
     "locale": "en-us",
     "text": "The authentication code for your ${brand} is: ${code}"
   }'
-
-  THIS IS NOT WORKING

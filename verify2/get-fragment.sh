@@ -5,5 +5,3 @@ source "../jwt.sh"
 curl GET "https://api.nexmo.com/v2/verify/templates/$VERIFY_TEMPLATE_ID/template_fragments/$VERIFY_TEMPLATE_FRAGMENT_ID" \
   -H "Authorization: Bearer $JWT"\
   -H 'Content-Type: application/json'
-
-NOT WORKING
