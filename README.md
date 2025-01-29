@@ -18,7 +18,9 @@ Some use JWT for authentication. These snippets will `source` the `jwt.sh` file,
 -H 'Authorization: Bearer '$JWT
 ```
 
-The `jwt.sh` file will generate a JWT for you using the values from the `VONAGE_APPLICATION_ID` and `VONAGE_PRIVATE_KEY` in your `config.sh` file. In order for `jwt.sh` to function, you must have the [Vonage CLI](https://github.com/vonage/vonage-cli) installed locally. You can install it in the following way:
+The `jwt.sh` file will generate a JWT for you using the values from the `VONAGE_APPLICATION_ID` and 
+`VONAGE_PRIVATE_KEY` in your `config.sh` file. In order for `jwt.sh` to function, you must have the latest [Vonage CLI]
+(https://github.com/vonage/vonage-cli) installed locally. You can install it in the following way:
 
 ```
 npm install -g @vonage/cli
