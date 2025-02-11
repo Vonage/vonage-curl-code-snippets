@@ -11,8 +11,8 @@ curl -X POST "${MESSAGES_API_URL}" \
     "to": "'${MESSAGES_TO_NUMBER}'",
     "from": "'${MMS_SENDER_ID}'",
     "channel": "mms",
-    "message_type": "image",
-    "image": {
-      "url": "'${MESSAGES_IMAGE_URL}'"
+    "message_type": "audio",
+    "audio": {
+      "url": "'${MESSAGES_AUDIO_URL}'"
     }
   }'
