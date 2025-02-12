@@ -3,9 +3,9 @@
 source "../../config.sh"
 source "../../jwt.sh"
 
-curl -X POST https://api-eu.vonage.com/oauth2/token \
-  -H 'Authorization: Bearer '$JWT\
-  -H 'Content-Type: application/x-www-form-urlencoded' \
-  -d 'code='$AUTH_CODE \
-  -d 'redirect_uri='$REDIRECT_URI \
-  -d 'grant_type: authorization_code'
+curl https://api-eu.vonage.com/oauth2/token \
+  --header "Authorization: Bearer $JWT" \
+  --header "Content-Type: application/x-www-form-urlencoded" \
+  --data-urlencode "code=$AUTH_CODE" \
+  --data-urlencode "redirect_uri=$REDIRECT_URI" \
+  --data-urlencode "grant_type: authorization_code"

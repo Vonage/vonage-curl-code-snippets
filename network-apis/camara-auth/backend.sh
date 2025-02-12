@@ -2,10 +2,9 @@
 
 source "../../config.sh"
 source "../../jwt.sh"
-source "oidc.sh"
 
-curl -X POST https://api-eu.vonage.com/oauth2/token \
-  -H 'Authorization: Bearer '$JWT\
-  -H 'Content-Type: application/x-www-form-urlencoded' \
-  -d 'auth_req_id='"$AUTH_REQ_ID"'' \
-  -d 'grant_type=urn:openid:params:grant-type:ciba'
+curl https://api-eu.vonage.com/oauth2/token \
+  --header "Authorization: Bearer $JWT" \
+  --header "Content-Type: application/x-www-form-urlencoded" \
+  --data-urlencode "auth_req_id=$VNA_AUTH_REQ_ID" \
+  --data-urlencode "grant_type=urn:openid:params:grant-type:ciba"
