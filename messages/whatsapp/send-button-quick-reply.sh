@@ -25,9 +25,10 @@ curl -X POST "${MESSAGES_API_URL}" \
             "type": "header",
             "parameters": [
               {
-                "type": "text",
-                "parameter_name": "appointment_date_1",
-                "text": "26th of February 2025"
+                "type": "image",
+                "image": {
+                  "link": "'${MESSAGES_IMAGE_URL}'"
+                }
               }
             ]
           },
@@ -46,7 +47,7 @@ curl -X POST "${MESSAGES_API_URL}" \
               },
               {
                 "type": "text",
-                "parameter_name": "appointment_date_2",
+                "parameter_name": "appointment_date",
                 "text": "2025-02-26"
               },
               {
