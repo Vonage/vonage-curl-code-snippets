@@ -2,15 +2,10 @@
 
 source "../../config.sh"
 
-SCOPE='openid dpv:FraudPreventionAndDetection#check-sim-swap'
-source "../camara-auth/backend.sh"
-
-
 curl -X POST https://api-eu.vonage.com/camara/sim-swap/v040/check \
-  -H 'Authorization: Bearer '$ACCESS_TOKEN\
-  -H 'Content-Type: application/json' \
-  -H 'Accept: application/json' \
-  -d $'{
-          "phoneNumber": "'$PHONE_NUMBER'",
-          "maxAge": "'$MAX_AGE'"
-    }'
+  --header "Authorization: Bearer $VNA_ACCESS_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data $'{
+        "phoneNumber": "'$VNA_PHONE_NUMBER'",
+        "maxAge": '$SIMSWAP_MAX_AGE'
+}'
