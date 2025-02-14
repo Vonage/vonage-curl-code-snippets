@@ -14,7 +14,7 @@ curl -X POST "${MESSAGES_API_URL}" \
     "message_type": "reaction",
     "reaction": {
       "action": "react",
-      "emoji": "'${EMOJI}'"
+      "emoji": "'${MESSAGES_EMOJI}'"
     },
     "context": {
         "message_uuid": "'${MESSAGES_MESSAGE_ID}'"
