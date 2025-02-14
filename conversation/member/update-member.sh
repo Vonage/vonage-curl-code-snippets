@@ -3,13 +3,10 @@
 source "../../config.sh"
 source "../../jwt.sh"
 
-curl -X "PUT" "https://api.nexmo.com/v0.3/conversations/$CONVERSATION_ID/members/$MEMBER_ID" \
+curl -X "PUT" "https://api.nexmo.com/v1/conversations/$CONV_ID/members/$CONV_MEMBER_ID" \
      -H 'Authorization: Bearer '$JWT\
      -H 'Content-Type: application/json' \
      -d $'{
-  "user_id": "'$USER_ID'",
-  "action": "join",
-  "channel": {
-    "type": "app"
-  }
+  "state": "'$CONV_MEMBER_STATE'",
+  "from": "string"
 }'

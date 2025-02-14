@@ -2,6 +2,6 @@
 
 source "../config.sh"
 
-curl -X POST -u $VONAGE_API_KEY:$VONAGE_API_SECRET https://api.nexmo.com/accounts/$VONAGE_API_KEY/balance-transfers  \
+curl -X "POST" "https://api.nexmo.com/accounts/$VONAGE_API_KEY/balance-transfers" -u $VONAGE_API_KEY:$VONAGE_API_SECRET \
      -H "Content-Type: application/json"  \
      -d $'{"from":"'$VONAGE_API_KEY'", "to":"'$SUBACCOUNT_KEY'", "amount": '$AMOUNT'}'
