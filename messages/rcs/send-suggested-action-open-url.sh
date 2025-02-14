@@ -8,7 +8,7 @@ curl -X POST "${MESSAGES_API_URL}" \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -d $'{
-    "to": "'${TO_NUMBER}'",
+    "to": "'${MESSAGES_TO_NUMBER}'",
     "from": "'${RCS_SENDER_ID}'",
     "channel": "rcs",
     "message_type": "custom",

@@ -24,7 +24,7 @@ curl -X POST "${MESSAGES_API_URL}" \
         },
         "action": {
           "catalog_id": "'${WHATSAPP_CATALOG_ID}'",
-          "product_retailer_id": "'${WHATSAPP_PRODUCT_ID}'"
+          "product_retailer_id": "'${WHATSAPP_PRODUCT_ID_1}'"
         }
       }
     }
