@@ -3,17 +3,14 @@
 source "../../config.sh"
 source "../../jwt.sh"
 
-curl -X POST https://api.nexmo.com/v0.1/messages \
-     -u "$VONAGE_API_KEY:$VONAGE_API_SECRET" \
-     -H 'Content-Type: application/json' \
-     -H 'Accept: application/json' \
-     -d $'{
-          "from": { "type": "sms", "number": "'$FROM_NUMBER'" },
-          "to": { "type": "sms", "number": "'$TO_NUMBER'" },
-          "message": {
-            "content": {
-              "type": "text",
-              "text": "This is an SMS sent from the Messages API"
-        }
-   }
-}'
+curl -X POST https://api.nexmo.com/v1/messages \
+	-u "${VONAGE_API_KEY}:${VONAGE_API_SECRET}" \
+	-H 'Content-Type: application/json' \
+	-H 'Accept: application/json' \
+	-d $'{
+		"to": "'${MESSAGES_TO_NUMBER}'",
+		"from": "'${SMS_SENDER_ID}'",
+		"channel": "sms",
+		"message_type": "text",
+		"text": "This is an SMS sent using the Vonage Messages API."
+	}'

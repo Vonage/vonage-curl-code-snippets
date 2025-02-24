@@ -1,18 +1,16 @@
 #!/usr/bin/env bash
 
 source "../../../config.sh"
+source "../../../jwt.sh"
 
 curl -X POST $MESSAGES_SANDBOX_URL \
-   -u $VONAGE_API_KEY:$VONAGE_API_SECRET \
-   -H 'Content-Type: application/json' \
-   -H 'Accept: application/json' \
-   -d '{
-     "from": { "type": "messenger", "id": "'$MESSAGES_SANDBOX_FB_ID'" },
-     "to": { "type": "messenger", "id": "'$MESSAGES_SANDBOX_ALLOW_LISTED_FB_RECIPIENT_ID'" },
-     "message": {
-      "content": {
-        "type": "text",
-        "text": "Messenger message sent from Messages Sandbox"
-     }
-   }
- }'
+  -H "Authorization: Bearer ${JWT}"\
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json' \
+  -d $'{
+    "to": "'${MESSENGER_RECIPIENT_ID}'",
+    "from": "'${MESSENGER_SENDER_ID}'",
+    "channel": "messenger",
+    "message_type": "text",
+    "text": "This is a Facebook Messenger text message sent using the Vonage Messages API."
+  }'
