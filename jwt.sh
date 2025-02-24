@@ -17,4 +17,4 @@ fi
 ACL=""
 
 # Generate the JWT
-JWT="$(vonage jwt --key_file $VONAGE_PRIVATE_KEY --app_id $VONAGE_APPLICATION_ID)"
+JWT="$(vonage jwt create --private-key $VONAGE_PRIVATE_KEY --app-id $VONAGE_APPLICATION_ID)"
