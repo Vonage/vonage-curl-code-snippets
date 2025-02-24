@@ -9,10 +9,10 @@ curl -X POST "${MESSAGES_API_URL}" \
   -H 'Accept: application/json' \
   -d $'{
     "to": "'${MESSAGES_TO_NUMBER}'",
-    "from": "'${VIBER_SENDER_ID}'",
-    "channel": "viber_service",
-    "message_type": "file",
-    "file": {
-      "url": "'${MESSAGES_FILE_URL}'"
+    "from": "'${MMS_SENDER_ID}'",
+    "channel": "mms",
+    "message_type": "vcard",
+    "vcard": {
+      "url": "'${MESSAGES_VCARD_URL}'"
     }
   }'
