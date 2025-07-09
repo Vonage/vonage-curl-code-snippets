@@ -3,15 +3,14 @@
 source "../../config.sh"
 source "../../jwt.sh"
 
-curl -X POST $MESSAGES_API_URL \
-  -H 'Authorization: Bearer '$JWT\
+curl -X POST "${MESSAGES_API_URL}" \
+  -H "Authorization: Bearer ${JWT}"\
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -d $'{
-          "message_type": "text",
-          "text": "Nexmo Verification code: 12345. Valid for 10 minutes.",
-          "to": "'$TO_NUMBER'",
-          "from": "'$FROM_NUMBER'",
-          "channel": "viber_service"
-
+    "to": "'${MESSAGES_TO_NUMBER}'",
+    "from": "'${VIBER_SENDER_ID}'",
+    "channel": "viber_service",
+    "message_type": "text",
+    "text": "This is an Viber Business Service text message sent using the Vonage Messages API."
   }'
