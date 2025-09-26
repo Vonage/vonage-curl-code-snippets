@@ -2,7 +2,7 @@
 
 source "../../config.sh"
 
-curl -G https://api.nexmo.com/v1/channel-manager/whatsapp/wabas/"${CHANNEL_MANAGER_WABA_ID}"/messaging-analytics \
+curl -G https://api.nexmo.com/v1/channel-manager/whatsapp/wabas/"${CHANNEL_MANAGER_WABA_ID}"/pricing-analytics \
   -u "${VONAGE_API_KEY}:${VONAGE_API_SECRET}" \
   -H 'Accept: application/json' \
   --data-urlencode start=$CHANNEL_MANAGER_WHATSAPP_ANALYTICS_START \
