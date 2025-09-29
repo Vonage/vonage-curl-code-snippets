@@ -15,11 +15,12 @@ curl -X POST "${MESSAGES_API_URL}" \
     "text": "Check out our latest offers!",
     "suggestions": [
       {
-        "type": "open_url",
+        "type": "open_url_in_webview",
         "text": "Open product page",
         "postback_data": "postback_data_1234",
         "url": "http://example.com/",
-        "description": "A URL for the Example website"
+        "description": "A URL for the Example website",
+        "view_mode": "FULL"
       }
     ]
   }'
