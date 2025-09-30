@@ -26,6 +26,11 @@ SEARCH_TEXT=${SEARCH_TEXT:-""}
 
 # Channel Manager API
 
+## RCS Brand Management
+CHANNEL_MANAGER_RCS_BRAND_NAME=${CHANNEL_MANAGER_RCS_BRAND_NAME:-""}
+CHANNEL_MANAGER_RCS_BRAND_ID=${CHANNEL_MANAGER_RCS_BRAND_ID:-""}
+
+## WhatsApp Business Account General Parameters
 CHANNEL_MANAGER_WABA_ID=${CHANNEL_MANAGER_WABA_ID:-""}
 
 ## WhatsApp Notification Webhooks
