@@ -10,7 +10,6 @@ curl -X PATCH "${GEOSPECIFIC_MESSAGES_API_URL}/${MESSAGES_MESSAGE_ID}" \
   -d $'{
     "status": "read",
     "typing_indicators": {
-      "show": "true",
       "type": "text"
     }
   }'
