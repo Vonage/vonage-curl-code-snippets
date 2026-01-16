@@ -226,6 +226,9 @@ SIP_USER_SECRET=${SIP_USER_SECRET:-""}
 ## Emergency API
 EMERGENCY_NUMBER=${EMERGENCY_NUMBER:-""}
 
+## Address API
+ADDRESS_ID=${ADDRESS_ID:-""}
+
 CONFIG_DIR=$(dirname "${BASH_SOURCE[0]}")
 if [ -f "$CONFIG_DIR/config.local.sh" ]; then
     source "$CONFIG_DIR/config.local.sh"
