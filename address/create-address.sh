@@ -6,13 +6,13 @@ curl -X "POST" "https://api.nexmo.com/v1/addresses" \
      -H 'Content-Type: application/json' \
      -u "$VONAGE_API_KEY:$VONAGE_API_SECRET" \
      -d $'{
-           "address_name": "myaddress",
-           "address_line1": "1 REGAL CT",
-           "address_line2": "Merchant House 205",
-           "city": "New York",
-           "region": "NJ",
-           "type": "emergency",
-           "address_location_type": "business",
-           "postal_code": "10002",
-           "country": "US"
+           "address_name": "'$ADDRESS_NAME'",
+           "address_line1": "'$ADDRESS_LINE_1'",
+           "address_line2": "'$ADDRESS_LINE_2'",
+           "city": "'$ADDRESS_CITY'",
+           "region": "'$ADDRESS_REGION'",
+           "type": "'$ADDRESS_TYPE'",
+           "address_location_type": "'$ADDRESS_LOCATION_TYPE'",
+           "postal_code": "'$ADDRESS_POSTAL_CODE'",
+           "country": "'$ADDRESS_COUNTRY'"
      }'

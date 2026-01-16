@@ -8,8 +8,8 @@ curl -X "PATCH" "https://api.nexmo.com/v1/emergency/numbers/$EMERGENCY_NUMBER" \
      -d $'{
         {
            "address": {
-              "id": "$EMERGENCY_ADDRESS_ID"
+              "id": "'$EMERGENCY_ADDRESS_ID'"
            },
-           "contact_name": "$EMERGENCY_CONTACT_NAME"
+           "contact_name": "'$EMERGENCY_CONTACT_NAME'"
         }
      }'
