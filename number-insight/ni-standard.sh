@@ -2,4 +2,4 @@
 
 source "../config.sh"
 
-curl "https://api.nexmo.com/ni/standard/json?api_key=$VONAGE_API_KEY&api_secret=$VONAGE_API_SECRET&number=$INSIGHT_NUMBER"
+curl -u "${VONAGE_API_KEY}:${VONAGE_API_SECRET}" "https://api.nexmo.com/ni/standard/json?number=$INSIGHT_NUMBER"
