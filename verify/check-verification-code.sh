@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 source "../config.sh"
 
-curl GET \
+curl \
   -u "${VONAGE_API_KEY}:${VONAGE_API_SECRET}" \
   "https://api.nexmo.com/verify/check/json?request_id=$VERIFY_REQUEST_ID&code=$VERIFY_CODE"
